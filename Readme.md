@@ -3,7 +3,7 @@
 ## Install
 
 ```
-npm install --save-dev rollup-plugin-screeps
+npm install --save-dev rollup-plugin-screeps-ss3
 ```
 
 ## Usage
@@ -11,7 +11,7 @@ npm install --save-dev rollup-plugin-screeps
 In `rollup.config.js`
 
 ```js
-import screeps from "rollup-plugin-screeps";
+import screeps from "rollup-plugin-screeps-ss3";
 
 ...
 
@@ -28,7 +28,7 @@ export default {
 
 ### Yaml Config File
 
-rollup-plugin-screeps now uses the [screeps unified credentials file](https://github.com/screepers/screepers-standards/blob/master/SS3-Unified_Credentials_File.md), as used by [screeps-api](https://github.com/screepers/node-screeps-api).
+rollup-plugin-screeps-ss3 now uses the [screeps unified credentials file](https://github.com/screepers/screepers-standards/blob/master/SS3-Unified_Credentials_File.md), as used by [screeps-api](https://github.com/screepers/node-screeps-api).
 
 Example `.screeps.yaml` config file:
 
@@ -52,7 +52,7 @@ Branch *(aka the destination folder on screeps server)* default to `auto`, it ca
 
 ### JS Config File
 
-rollup-plugin-screeps still support the json config file.
+rollup-plugin-screeps-ss3 still support the json config file.
 
 ```json
 {
@@ -68,4 +68,4 @@ rollup-plugin-screeps still support the json config file.
 
 It change be loaded from a file with `screeps({ configFile: './screeps.json' })` or direct as value with `screeps({ config: my_config })`.
 
-If `branch` is set to `"auto"` rollup-plugin-screeps will use your current git branch as the name of the branch on screeps, if you set it to anything else that string will be used as the name of the branch.
+If `branch` is set to `"auto"` rollup-plugin-screeps-ss3 will use your current git branch as the name of the branch on screeps, if you set it to anything else that string will be used as the name of the branch.

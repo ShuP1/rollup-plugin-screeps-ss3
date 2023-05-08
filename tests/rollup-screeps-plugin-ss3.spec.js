@@ -7,7 +7,7 @@ const git = require('git-rev-sync')
 const clear = require("rollup-plugin-clear");
 const copy = require("rollup-plugin-copy")
 
-const screeps = require('../src/rollup-plugin-screeps')
+const screeps = require('../src/rollup-plugin-screeps-ss3')
 
 
 describe('Rollup Screeps Plugin', function(){
